@@ -1,0 +1,219 @@
+$('.navbartop .nav-button').click(function() {
+	$('.navbartop ul').toggle(500);
+	//$('.navbartop > ul').css('display', 'block');
+});
+$(document).ready(function(){
+	$('ul.faq li .expand').hide();
+	$('ul.faq li').click(function (){
+		$('ul.faq li .expand').hide();
+		$('ul.faq li .fa').removeClass('fa-minus-circle');
+		$('ul.faq li .fa').addClass('fa-plus-circle');
+		$(this).find('.expand').show();
+		$(this).find('.fa').removeClass('fa-plus-circle');
+		$(this).find('.fa').addClass('fa-minus-circle');
+	});
+//Next page Tin t?c trang ch?
+    $('.item-5').hide();$('.item-10').hide();$('.item-15').hide();$('.item-20').hide();$('.item-6').hide();$('.item-7').hide();$('.item-8').hide();$('.item-9').hide();$('.item-11').hide();$('.item-12').hide();$('.item-13').hide();$('.item-14').hide();$('.item-16').hide();$('.item-17').hide();$('.item-18').hide();$('.item-19').hide();
+    $('.page-1').click(function (e) {
+        e.preventDefault();
+        $('.page-1').addClass('active');$('.page-2').removeClass('active');$('.page-3').removeClass('active');$('.page-4').removeClass('active');$('.page-5').removeClass('active');
+        //hide article news
+        $('.item-1').show();$('.item-5').hide();$('.item-10').hide();$('.item-15').hide();$('.item-20').hide();
+        $('.item-2').show(); $('.item-3').show(); $('.item-4').show(); $('.item-6').hide(); $('.item-7').hide(); $('.item-8').hide(); $('.item-9').hide(); $('.item-11').hide(); $('.item-12').hide(); $('.item-13').hide(); $('.item-14').hide(); $('.item-16').hide(); $('.item-17').hide(); $('.item-18').hide(); $('.item-19').hide();
+    });
+    $('.page-2').click(function (e) {
+        e.preventDefault();
+        $('.page-2').addClass('active');$('.page-1').removeClass('active');$('.page-3').removeClass('active');$('.page-4').removeClass('active');$('.page-5').removeClass('active');
+        //hide article news
+        $('.item-1').hide();$('.item-5').show();$('.item-10').hide();$('.item-15').hide();$('.item-20').hide();$('.item-2').hide();$('.item-3').hide();$('.item-4').hide();
+        $('.item-6').show();$('.item-7').show();$('.item-8').show();
+        $('.item-9').hide(); $('.item-11').hide(); $('.item-12').hide(); $('.item-13').hide(); $('.item-14').hide(); $('.item-16').hide(); $('.item-17').hide(); $('.item-18').hide(); $('.item-19').hide();
+    });
+    $('.page-3').click(function (e) {
+        e.preventDefault();
+        $('.page-3').addClass('active');$('.page-1').removeClass('active');$('.page-2').removeClass('active');$('.page-4').removeClass('active');$('.page-5').removeClass('active');
+        //hide article news
+        $('.item-1').hide(); $('.item-5').hide(); $('.item-10').show(); $('.item-15').hide(); $('.item-20').hide(); $('.item-2').hide(); $('.item-3').hide(); $('.item-4').hide(); $('.item-6').hide(); $('.item-7').hide(); $('.item-8').hide();
+        $('.item-9').show();$('.item-11').show();$('.item-12').show();
+        $('.item-13').hide();$('.item-14').hide();$('.item-16').hide();$('.item-17').hide();$('.item-18').hide();$('.item-19').hide();
+    });
+    $('.page-4').click(function (e) {
+        e.preventDefault();
+        $('.page-4').addClass('active'); $('.page-1').removeClass('active'); $('.page-2').removeClass('active'); $('.page-3').removeClass('active'); $('.page-5').removeClass('active');
+        //hide article news
+        $('.item-1').hide();$('.item-5').hide();$('.item-10').hide();$('.item-15').show();$('.item-20').hide();
+        $('.item-2').hide();$('.item-3').hide();$('.item-4').hide();$('.item-6').hide();$('.item-7').hide();$('.item-8').hide();$('.item-9').hide();$('.item-11').hide();$('.item-12').hide();
+        $('.item-13').show();$('.item-14').show();$('.item-16').show();
+        $('.item-17').hide();$('.item-18').hide();$('.item-19').hide();
+    });
+    $('.page-5').click(function (e) {
+        e.preventDefault();
+        $('.page-5').addClass('active');$('.page-1').removeClass('active');$('.page-2').removeClass('active');$('.page-3').removeClass('active');$('.page-4').removeClass('active');
+        //hide article news
+        $('.item-1').hide(); $('.item-5').hide(); $('.item-10').hide(); $('.item-15').hide(); $('.item-20').show(); $('.item-2').hide(); $('.item-3').hide(); $('.item-4').hide(); $('.item-6').hide(); $('.item-7').hide(); $('.item-8').hide(); $('.item-9').hide(); $('.item-11').hide(); $('.item-12').hide(); $('.item-13').hide(); $('.item-14').hide(); $('.item-16').hide();
+        $('.item-17').show();$('.item-18').show();$('.item-19').show();
+    });
+    //END Next page Tin t?c trang ch?
+
+    //Next page C?nh báo trang ch?
+    $('.imgWarning-1,.imgWarning-4,.imgWarning-7,.imgWarning-10,.imgWarning-13').attr({ 'src': '/Images/canhbao.png' });
+    $('.imgWarning-2,.imgWarning-5,.imgWarning-8,.imgWarning-11,.imgWarning-14').attr({ 'src': '/Images/canhbao.png' });
+    $('.imgWarning-3,.imgWarning-6,.imgWarning-9,.imgWarning-12,.imgWarning-15').attr({ 'src': '/Images/canhbao.png' });
+    $('.itemWarning-1').show(); $('.itemWarning-2').show(); $('.itemWarning-3').show();
+    $('.itemWarning-4').hide(); $('.itemWarning-5').hide(); $('.itemWarning-6').hide(); $('.itemWarning-7').hide(); $('.itemWarning-8').hide(); $('.itemWarning-9').hide(); $('.itemWarning-10').hide(); $('.itemWarning-11').hide(); $('.itemWarning-12').hide(); $('.itemWarning-13').hide(); $('.itemWarning-14').hide(); $('.itemWarning-15').hide();
+    $('.pageWarning-1').click(function (e) {
+        e.preventDefault();
+        $('.pageWarning-1').addClass('active'); $('.pageWarning-2').removeClass('active'); $('.pageWarning-3').removeClass('active'); $('.pageWarning-4').removeClass('active'); $('.pageWarning-5').removeClass('active');
+        $('.itemWarning-1').show(); $('.itemWarning-2').show(); $('.itemWarning-3').show();
+        $('.itemWarning-4').hide(); $('.itemWarning-5').hide(); $('.itemWarning-6').hide(); $('.itemWarning-7').hide(); $('.itemWarning-8').hide(); $('.itemWarning-9').hide(); $('.itemWarning-10').hide(); $('.itemWarning-11').hide(); $('.itemWarning-12').hide(); $('.itemWarning-13').hide(); $('.itemWarning-14').hide(); $('.itemWarning-15').hide();
+    });
+    $('.pageWarning-2').click(function (e) {
+        e.preventDefault();
+        $('.pageWarning-2').addClass('active'); $('.pageWarning-1').removeClass('active'); $('.pageWarning-3').removeClass('active'); $('.pageWarning-4').removeClass('active'); $('.pageWarning-5').removeClass('active');
+        $('.itemWarning-4').show(); $('.itemWarning-5').show(); $('.itemWarning-6').show();
+        $('.itemWarning-1').hide(); $('.itemWarning-2').hide(); $('.itemWarning-3').hide(); $('.itemWarning-7').hide(); $('.itemWarning-8').hide(); $('.itemWarning-9').hide(); $('.itemWarning-10').hide(); $('.itemWarning-11').hide(); $('.itemWarning-12').hide(); $('.itemWarning-13').hide(); $('.itemWarning-14').hide(); $('.itemWarning-15').hide();
+    });
+    $('.pageWarning-3').click(function (e) {
+        e.preventDefault();
+        $('.pageWarning-3').addClass('active'); $('.pageWarning-1').removeClass('active'); $('.pageWarning-2').removeClass('active'); $('.pageWarning-4').removeClass('active'); $('.pageWarning-5').removeClass('active');
+        $('.itemWarning-7').show(); $('.itemWarning-8').show(); $('.itemWarning-9').show();
+        $('.itemWarning-1').hide(); $('.itemWarning-2').hide(); $('.itemWarning-3').hide(); $('.itemWarning-4').hide(); $('.itemWarning-5').hide(); $('.itemWarning-6').hide(); $('.itemWarning-10').hide(); $('.itemWarning-11').hide(); $('.itemWarning-12').hide(); $('.itemWarning-13').hide(); $('.itemWarning-14').hide(); $('.itemWarning-15').hide();
+    });
+    $('.pageWarning-4').click(function (e) {
+        e.preventDefault();
+        $('.pageWarning-4').addClass('active'); $('.pageWarning-1').removeClass('active'); $('.pageWarning-2').removeClass('active'); $('.pageWarning-3').removeClass('active'); $('.pageWarning-5').removeClass('active');
+        $('.itemWarning-10').show(); $('.itemWarning-11').show(); $('.itemWarning-12').show();
+        $('.itemWarning-1').hide(); $('.itemWarning-2').hide(); $('.itemWarning-3').hide(); $('.itemWarning-4').hide(); $('.itemWarning-5').hide(); $('.itemWarning-6').hide(); $('.itemWarning-7').hide(); $('.itemWarning-8').hide(); $('.itemWarning-9').hide(); $('.itemWarning-13').hide(); $('.itemWarning-14').hide(); $('.itemWarning-15').hide();
+    });
+    $('.pageWarning-5').click(function (e) {
+        e.preventDefault();
+        $('.pageWarning-5').addClass('active'); $('.pageWarning-1').removeClass('active'); $('.pageWarning-2').removeClass('active'); $('.pageWarning-3').removeClass('active'); $('.pageWarning-4').removeClass('active');
+        $('.itemWarning-13').show(); $('.itemWarning-14').show(); $('.itemWarning-15').show();
+        $('.itemWarning-1').hide(); $('.itemWarning-2').hide(); $('.itemWarning-3').hide(); $('.itemWarning-4').hide(); $('.itemWarning-5').hide(); $('.itemWarning-6').hide(); $('.itemWarning-7').hide(); $('.itemWarning-8').hide(); $('.itemWarning-9').hide(); $('.itemWarning-10').hide(); $('.itemWarning-11').hide(); $('.itemWarning-12').hide();
+    });
+    //END Next page C?nh báo trang ch?
+    //Next page H?i ðáp trang ch?
+    $('.imgitemfaq-1,.imgitemfaq-4,.imgitemfaq-7,.imgitemfaq-10,.imgitemfaq-13').attr({ 'src': '/Images/hoidap.png' });
+    $('.imgitemfaq-2,.imgitemfaq-5,.imgitemfaq-8,.imgitemfaq-11,.imgitemfaq-14').attr({ 'src': '/Images/hoidap.png' });
+    $('.imgitemfaq-3,.imgitemfaq-6,.imgitemfaq-9,.imgitemfaq-12,.imgitemfaq-15').attr({ 'src': '/Images/hoidap.png' });
+    $('.itemfaq-1').show(); $('.itemfaq-2').show(); $('.itemfaq-3').show();
+    $('.itemfaq-4').hide(); $('.itemfaq-5').hide(); $('.itemfaq-6').hide(); $('.itemfaq-7').hide(); $('.itemfaq-8').hide(); $('.itemfaq-9').hide(); $('.itemfaq-10').hide(); $('.itemfaq-11').hide(); $('.itemfaq-12').hide(); $('.itemfaq-13').hide(); $('.itemfaq-14').hide(); $('.itemfaq-15').hide();
+    $('.pagefaq-1').click(function (e) {
+        e.preventDefault();
+        $('.pagefaq-1').addClass('active'); $('.pagefaq-2').removeClass('active'); $('.pagefaq-3').removeClass('active'); $('.pagefaq-4').removeClass('active'); $('.pagefaq-5').removeClass('active');
+        $('.itemfaq-1').show(); $('.itemfaq-2').show(); $('.itemfaq-3').show();
+        $('.itemfaq-4').hide(); $('.itemfaq-5').hide(); $('.itemfaq-6').hide(); $('.itemfaq-7').hide(); $('.itemfaq-8').hide(); $('.itemfaq-9').hide(); $('.itemfaq-10').hide(); $('.itemfaq-11').hide(); $('.itemfaq-12').hide(); $('.itemfaq-13').hide(); $('.itemfaq-14').hide(); $('.itemfaq-15').hide();
+    });
+    $('.pagefaq-2').click(function (e) {
+        e.preventDefault();
+        $('.pagefaq-2').addClass('active'); $('.pagefaq-1').removeClass('active'); $('.pagefaq-3').removeClass('active'); $('.pagefaq-4').removeClass('active'); $('.pagefaq-5').removeClass('active');
+        $('.itemfaq-4').show(); $('.itemfaq-5').show(); $('.itemfaq-6').show();
+        $('.itemfaq-1').hide(); $('.itemfaq-2').hide(); $('.itemfaq-3').hide(); $('.itemfaq-7').hide(); $('.itemfaq-8').hide(); $('.itemfaq-9').hide(); $('.itemfaq-10').hide(); $('.itemfaq-11').hide(); $('.itemfaq-12').hide(); $('.itemfaq-13').hide(); $('.itemfaq-14').hide(); $('.itemfaq-15').hide();
+    });
+    $('.pagefaq-3').click(function (e) {
+        e.preventDefault();
+        $('.pagefaq-3').addClass('active'); $('.pagefaq-1').removeClass('active'); $('.pagefaq-2').removeClass('active'); $('.pagefaq-4').removeClass('active'); $('.pagefaq-5').removeClass('active');
+        $('.itemfaq-7').show(); $('.itemfaq-8').show(); $('.itemfaq-9').show();
+        $('.itemfaq-1').hide(); $('.itemfaq-2').hide(); $('.itemfaq-3').hide(); $('.itemfaq-4').hide(); $('.itemfaq-5').hide(); $('.itemfaq-6').hide(); $('.itemfaq-10').hide(); $('.itemfaq-11').hide(); $('.itemfaq-12').hide(); $('.itemfaq-13').hide(); $('.itemfaq-14').hide(); $('.itemfaq-15').hide();
+    });
+    $('.pagefaq-4').click(function (e) {
+        e.preventDefault();
+        $('.pagefaq-4').addClass('active'); $('.pagefaq-1').removeClass('active'); $('.pagefaq-2').removeClass('active'); $('.pagefaq-3').removeClass('active'); $('.pagefaq-5').removeClass('active');
+        $('.itemfaq-10').show(); $('.itemfaq-11').show(); $('.itemfaq-12').show();
+        $('.itemfaq-1').hide(); $('.itemfaq-2').hide(); $('.itemfaq-3').hide(); $('.itemfaq-4').hide(); $('.itemfaq-5').hide(); $('.itemfaq-6').hide(); $('.itemfaq-7').hide(); $('.itemfaq-8').hide(); $('.itemfaq-9').hide(); $('.itemfaq-13').hide(); $('.itemfaq-14').hide(); $('.itemfaq-15').hide();
+    });
+    $('.pagefaq-5').click(function (e) {
+        e.preventDefault();
+        $('.pagefaq-5').addClass('active'); $('.pagefaq-1').removeClass('active'); $('.pagefaq-2').removeClass('active'); $('.pagefaq-3').removeClass('active'); $('.pagefaq-4').removeClass('active');
+        $('.itemfaq-13').show(); $('.itemfaq-14').show(); $('.itemfaq-15').show();
+        $('.itemfaq-1').hide(); $('.itemfaq-2').hide(); $('.itemfaq-3').hide(); $('.itemfaq-4').hide(); $('.itemfaq-5').hide(); $('.itemfaq-6').hide(); $('.itemfaq-7').hide(); $('.itemfaq-8').hide(); $('.itemfaq-9').hide(); $('.itemfaq-10').hide(); $('.itemfaq-11').hide(); $('.itemfaq-12').hide();
+    });
+    //END Next page C?nh báo trang ch?
+
+    //Tab in NewsView.aspx
+    $('a.tab').click(function (e) {
+        $('.active-tabs').removeClass('active-tabs');
+        $(this).addClass('active-tabs');
+        //$('.contenttab').slideUp();
+        //var content_show = $(this).attr('title');
+        //$('#' + content_show).slideDown();
+
+    });
+    var catealias = getURLParameter('CateAlias');
+    if (catealias == 'tin-tuc') {
+        $('.active-tabs').removeClass('active-tabs');
+        $('#tabNews').addClass('active-tabs');
+            //$('#contentnews').slideDown();
+
+    }
+    if (catealias == 'thong-bao') {
+        $('.active-tabs').removeClass('active-tabs');
+        $('#tabNotify').addClass('active-tabs');
+            //$('.contenttab').slideUp();
+            //$('#contentnotify').slideDown();
+
+    }
+    if (catealias == 'canh-bao') {
+        $('.active-tabs').removeClass('active-tabs');
+        $('#tabWarning').addClass('active-tabs');
+            //$('.contenttab').slideUp();
+            //$('#contentnotify').slideDown();
+
+    }
+    if (catealias == 'hoi-dap') {
+        $('.active-tabs').removeClass('active-tabs');
+        $('#tabFAQ').addClass('active-tabs');
+            //$('.contenttab').slideUp();
+            //$('#contentnotify').slideDown();
+
+    }
+
+    $("a.news-sumary").each(function () {
+        var str = $(this).text();
+        var sumtext = str.substr(0, 90).lastIndexOf(" ");
+        var shortText = str;
+        if (str.length > 90) {
+            shortText = str.trim().substring(0, sumtext) + " ...";
+        }
+        $(this).text(shortText);
+        //var sumMotherfukkentext = $(this).text().substr(0, 90).lastIndexOf(" ");
+        ////$("p.probandoprobando").text(sumMotherfukkentext);
+        //var eltexTo = $(this).text();
+        //var title = eltexTo;
+        //var shortText = title.trim().substring(0, sumMotherfukkentext).split(" ").slice(0, -1).join(" ") + " ...";
+        //$(this).text(shortText);
+    });
+    $("a.home-news-title,a.news-title").each(function () {
+        var str = $(this).text();
+        var sumtext = str.substr(0, 80).lastIndexOf(" ");
+        var shortText = str;
+        if (str.length > 90) {
+            shortText = str.trim().substring(0, sumtext) + " ...";
+        }
+        $(this).text(shortText);
+        //var sumMotherfukkentext = $(this).text().substr(0, 90).lastIndexOf(" ");
+        ////$("p.probandoprobando").text(sumMotherfukkentext);
+        //var eltexTo = $(this).text();
+        //var title = eltexTo;
+        //var shortText = title.trim().substring(0, sumMotherfukkentext).split(" ").slice(0, -1).join(" ") + " ...";
+        //$(this).text(shortText);
+    });
+   
+});
+
+//Home page buttom search click
+function gotoSearch() {
+    var text = $('#search-input').val();
+    var link = '';
+    if ($('#opt-company:checked').length > 0)link = '/CompanyView.aspx';
+    if ($('#opt-website:checked').length > 0)link = '/WebsiteViewSearch.aspx';
+    if ($('#opt-app:checked').length > 0) link = '/AppViewSearch.aspx';
+    window.location = link + '?text=' + text;
+    return false;
+}
+
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1]
+    );
+};

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SmartPhoneStore</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Smart Phone Store">
+    <meta name="keywords" content="smart phone, accessories, trend, apple">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styleregister.css" />
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styletop.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v3.3'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="389004071844663" logged_in_greeting="Cửa hàng Smart Phone Store xin kính chào quý khách! Quý khách cần giúp đỡ gì ạ!" logged_out_greeting="Cửa hàng Smart Phone Store xin kính chào quý khách! Quý khách cần giúp đỡ gì ạ!">
+    </div>
+    <!-- Header section -->
+    <header class="header-section">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Smart Phone Store</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="sp"><a href="apple.html">Apple</a></li>
+                    <li class="sp"><a href="samsung.html">Samsung</a></li>
+                    <li class="sp"><a href="xiaomi.html">XiaoMi</a></li>
+                    <li><a href="phukien.html"><span class="glyphicon glyphicon-headphones"></span> Phụ kiện</a></li>
+                    <li><a href="https://www.youtube.com/user/xuanvinh1612"><span class="glyphicon glyphicon-expand"></span>Review</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header section end -->
+
+    <div class="container registerform">
+        <h1 class="well">Mẫu đăng ký</h1>
+        <div class="col-lg-12 well">
+            <div class="row">
+                <form>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label>Tên tài khoản</label>
+                            <input type="text" placeholder="Nhập tên tài khoản.." class="form-control">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label>Mật khẩu</label>
+                                <input type="password" placeholder="Nhập mật khẩu.." class="form-control">
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label>Nhập lại mật khẩu</label>
+                                <input type="password" placeholder="Nhập lại mật khẩu.." class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label>Họ</label>
+                                <input type="text" placeholder="Nhập họ.." class="form-control">
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label>Tên</label>
+                                <input type="text" placeholder="Nhập tên.." class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Địa chỉ email</label>
+                            <input type="text" placeholder="Nhập email.." class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Xác nhận lại địa chỉ email</label>
+                            <input type="text" placeholder="Nhập lại email.." class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Số điện thoại</label>
+                            <input type="text" placeholder="Nhập số điện thoại.." class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Địa chỉ nhà</label>
+                            <input type="text" placeholder="Nhập địa chỉ nhà.." class="form-control">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label>Thành phố</label>
+                                <input type="text" placeholder="Nhập thành phố.." class="form-control">
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label>Quốc gia</label>
+                                <input type="text" placeholder="Nhập quốc gia.." class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Nghề nghiệp</label>
+                            <select class="form-control">
+                                <option>Bác sĩ</option>
+                                <option>Kĩ sư</option>
+                                <option>Công nhân</option>
+                                <option>Nông dân</option>
+                            </select>
+                        </div>
+
+                        <button type="button" class="btn btn-lg btn-info">Đăng Ký</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section  -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box footer-menu-bottom">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box footer-list">
+                    <p><a href="#">Gọi mua hàng: 1900.1234 (24/7)</a></p>
+                    <p><a href="#">Gọi bảo hành: 1900.5678 (24/7)</a></p>
+                    <p><a href="#">Gọi khiếu nại: 1900.9999 (24/7)</a></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box footer-list">
+                    <p><a href="#">Chính sách bảo hành</a></p>
+                    <p><a href="#">Chính sách đổi trả sản phẩm</a></p>
+                    <p><a href="#">Hỏi Đáp Mua Hàng Online</a></p>
+                    <p><a href="#">Phương Thức Thanh Toán</a></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box pay">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay1">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay2">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay3">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box pay">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay4">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay5">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay6">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box pay7">
+                        <a href="html/Cổng thông tin quản lý hoạt động thương mại điện tử.html">
+                            <img class="bct" alt="smartphonebct" src="img/payment/4277831_upload_2018-4-2_14-40-43-Copy.png" width="150px" height="50px">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box footer-social">
+                <a href="https://www.facebook.com/FUNIX-FUN131x-Project-4-Fx00495-389004071844663/" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com/channel/UCiw5inxqcGdmS1niSjyaGkQ" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box-footer">
+                <p class="copyright">
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> All rights reserved | Design by FX00495
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end -->
+</body>
+
+</html>
