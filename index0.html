@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SmartPhoneStore</title>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="5QeWJu2hPe4ErcKQPXHDtjqmVP8Arkxrm8Id12BfzyQ" />
+    <meta name="description" content="Smart Phone Store">
+    <meta name="keywords" content="smart phone, accessories, trend, apple">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylereview.css" />
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142139590-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-142139590-1');
+    </script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v3.3'
+            });
+        };
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="389004071844663" logged_in_greeting="Cửa hàng Smart Phone Store xin kính chào quý khách! Quý khách cần giúp đỡ gì ạ!" logged_out_greeting="Cửa hàng Smart Phone Store xin kính chào quý khách! Quý khách cần giúp đỡ gì ạ!">
+    </div>
+    <!-- Header section -->
+    <header class="header-section">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Smart Phone Store</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="sp"><a href="apple.html">Apple</a></li>
+                    <li class="sp"><a href="samsung.html">Samsung</a></li>
+                    <li class="sp"><a href="xiaomi.html">XiaoMi</a></li>
+                    <li><a href="phukien.html"><span class="glyphicon glyphicon-headphones"></span> Phụ kiện</a></li>
+                    <li><a href="https://www.youtube.com/user/xuanvinh1612"><span class="glyphicon glyphicon-expand"></span> Review</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header section end -->
+
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box">
+            <!-- Slide -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="index.html" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="samsung.html"><img src="img/2019-06-08-12.24.25.jpg" alt="sale iphone" style="width:100%;"></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="samsung.html"><img src="img/slide.jpg" alt="sale samsung" style="width:100%;"></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="samsung.html"><img src="img/oppof11pro_3.png" alt="sale xiaomi" style="width:100%;"></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="apple.html"><img src="img/Slide-iPhone-6-chinh-hang.jpg" alt="sale iphone" style="width:100%;"></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="samsung.html"><img src="img/Flash-sale-realme-c2.jpg" alt="sale oppo" style="width:100%;"></a>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product content -->
+        <!-- Block content 1 -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box block-content">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box1">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>iPhone 8 plus 64Gb nguyên seal trôi bảo hành đẹp như mới, tặng sạc, cable chính hãng</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 11.590.000 VND</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box2">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>OPPO A5S Chính Hãng 3GB/32GB Pin Khủng - Camera kép</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 3.990.000 VNĐ</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box3">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>Samsung Galaxy A20 Chính Hãng Màn hình tràn viền, pin trâu, giá siêu rẻ</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 3.790.000 VNĐ</h4>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Block content 2 -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box block-content">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box4">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>Samsung Galaxy A50 4Gb/64Gb Chính Hãng Vân tay trên màn hình, pin khủng</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 5.690.000 VNĐ</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box5">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>Asus Zenfone Max Pro (M2)</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 4.690.000 VNĐ</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box6">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>iPhone 7 32Gb Mới Chính Hãng chưa kích hoạt, bản J/a, nguyên hộp</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 8.690.000 VNĐ</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Block content 3 -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box block-content">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box7">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>iPad 2018 32GB (Only Wifi) mới chính hãng chưa kích hoạt, fullbox, phụ kiện zin</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 7.690.000 VNĐ</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box8">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>iPhone 6 32GB Chính Hãng Nguyên Seal Trôi Bảo Hành Mới, Fullbox nguyên seal</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 4.590.000 VNĐ</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box9">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>Xiaomi Mi 9 Chính Hãng DGW 64 Gb Ram 6 Gb chụp ảnh đẹp thứ 3 thế giới, vân tay trên màn hình</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 11.990.000 VNĐ</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Block content 4 -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box block-content">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box10">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>Xiaomi Redmi Note 7 Chính Hãng DGW Ram 3GB / 32GB</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 3.990.000 VNĐ</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box11">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>OPPO F11 Pro 6GB/128GB chính hãng máy chính hãng mới 100%, bảo hành 24 tháng</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 8.490.000 VNĐ</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box12">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box sub-content">
+                    <p>Samsung Galaxy S10+ 128Gb Chính Hãng vân tay siêu âm trên màn hình, thiết kế độc nhất</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box price">
+                    <h4>Giá: 17.990.000 VNĐ</h4>
+                </div>
+            </div>
+        </div>
+        <!-- End product content -->
+    </div>
+
+    <!-- Footer section  -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box footer-menu-bottom">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box footer-list">
+                    <p><a href="#">Gọi mua hàng: 1900.1234 (24/7)</a></p>
+                    <p><a href="#">Gọi bảo hành: 1900.5678 (24/7)</a></p>
+                    <p><a href="#">Gọi khiếu nại: 1900.9999 (24/7)</a></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box footer-list">
+                    <p><a href="#">Chính sách bảo hành</a></p>
+                    <p><a href="#">Chính sách đổi trả sản phẩm</a></p>
+                    <p><a href="#">Hỏi Đáp Mua Hàng Online</a></p>
+                    <p><a href="#">Phương Thức Thanh Toán</a></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box pay">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay1">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay2">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay3">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box pay">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay4">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay5">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 box pay6">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box pay7">
+                        <a href="html/Cổng thông tin quản lý hoạt động thương mại điện tử.html">
+                            <img class="bct" alt="smartphonebct" src="img/payment/4277831_upload_2018-4-2_14-40-43-Copy.png" width="150px" height="50px">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box footer-social">
+                <a href="https://www.facebook.com/FUNIX-FUN131x-Project-4-Fx00495-389004071844663/" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com/channel/UCiw5inxqcGdmS1niSjyaGkQ" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 box box-footer">
+                <p class="copyright">
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> All rights reserved | Design by FX00495
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end -->
+</body>
+</html>
