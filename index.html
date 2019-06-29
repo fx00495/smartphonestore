@@ -17,7 +17,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/stylereview.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
 
     <!-- Latest compiled and minified CSS -->
@@ -91,7 +91,7 @@
                 </form>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng</a></li>
-                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                    <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
                     <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
                 </ul>
             </div>
@@ -146,6 +146,33 @@
                 </a>
             </div>
         </div>
+
+<!-- Log in modal start -->
+        <div id="id01" class="modal">
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+<!-- Log in modal end -->
 
         <!-- Product content -->
         <!-- Block content 1 -->
